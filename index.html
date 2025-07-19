@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SenseGrid | Smart Industrial Monitoring & IoT Solutions in Sri Lanka</title>
+
+  <meta name="description" content="SenseGrid delivers intelligent machine monitoring solutions using IoT and real-time analytics for manufacturing and industrial operations across Sri Lanka.">
+  <meta name="keywords" content="SenseGrid, IoT Sri Lanka, industrial monitoring, temperature sensor, current sensor, ESP32, GSM monitoring, machine analytics, smart factory, predictive maintenance">
+  <meta name="author" content="SenseGrid">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SenseGrid | Smart Machine Monitoring Solutions">
+  <meta property="og:description" content="Optimize your industrial performance with real-time data and IoT insights. Powered by ESP32, cloud dashboards, and sensor integration.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/JanithSheshan/sensegrid-website/main/assets/img/sensegrid-logo.png">
+  <meta property="og:url" content="https://sensegrid.tech/">
+  <meta property="og:site_name" content="SenseGrid">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SenseGrid | Real-time Machine Monitoring in Sri Lanka">
+  <meta name="twitter:description" content="Industrial IoT for smart decision-making. Monitor machines, get alerts, and improve efficiency with SenseGrid.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/JanithSheshan/sensegrid-website/main/assets/img/sensegrid-logo.png">
+  <meta name="twitter:site" content="@sensegrid">
+  <meta name="twitter:creator" content="@sensegrid">
+
+  <!-- Canonical Link -->
+  <link rel="canonical" href="https://sensegrid.tech/">
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox@3.4.0/dist/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SenseGrid",
+    "url": "https://sensegrid.tech",
+    "logo": "https://raw.githubusercontent.com/JanithSheshan/sensegrid-website/main/assets/img/sensegrid-logo.png",
+    "description": "SenseGrid is a Sri Lankan IoT-based platform for real-time machine monitoring and predictive analytics.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+94-76-123-4567",
+      "contactType": "Customer Support",
+      "email": "support@sensegrid.lk"
+    },
+    "sameAs": [
+      "https://facebook.com/sensegrid",
+      "https://twitter.com/sensegrid",
+      "https://linkedin.com/company/sensegrid"
+    ]
+  }
+  </script>
+
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/SensGrid logo.png" alt="">
+        <!-- <h1 class="sitename">Strategy</h1> -->
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 content-col" data-aos="fade-up">
+            <div class="content">
+              <div class="agency-name">
+                <h5>INDUSTRY <span style="color:#0057B7">4.0</span></h5>
+              </div>
+
+              <div class="main-heading">
+                <h1>SENSEGRID</h1>
+              </div>
+
+              <div class="divider"></div>
+
+              <div class="description">
+                <p>Seamlessly integrate intelligence into your industrial operations.
+                    Sensegrid delivers cutting-edge IIoT solutions tailored for Industry 4.0 transformation.</p>
+              </div>
+
+              <div class="cta-button">
+                <a href="#services" class="btn">
+                  <span>EXPLORE SERVICES</span>
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="zoom-out">
+            <div class="visual-content">
+              <div class="fluid-shape">
+                <img src="assets/img/abstract/abstract-1.png" alt="Abstract Fluid Shape" class="fluid-img">
+              </div>
+
+              <div class="stats-card">
+                <div class="stats-number">
+                  <h2>5K</h2>
+                </div>
+                <div class="stats-label">
+                  <p>Successful Campaigns</p>
+                </div>
+                <div class="stats-arrow">
+                  <a href="#portfolio"><i class="bi bi-arrow-up-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About</h2>
+    <div><span>What We Do</span> <span class="description-title">SenseGrid</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gx-5 align-items-center">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+        <div class="about-image position-relative">
+          <img src="assets/img/pana.png" class="img-fluid rounded-4 shadow-sm" alt="SenseGrid Indoor & Outdoor Ready" loading="lazy">
+          <div class="experience-badge">
+            <span class="years">IP67</span>
+            <span class="text">Dust & Water Resistant</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
+        <div class="about-content">
+          <h2>Indoor & Outdoor Ready</h2>
+          <p class="lead">Monitor One is engineered to perform seamlessly in any environment, whether indoors or outdoors.</p>
+          <p>With IP67-rated protection, it ensures reliable operation in harsh weather, extreme temperatures, and rugged industrial settings—guaranteeing durability and performance wherever your machines are deployed.</p>
+
+          <div class="row g-4 mt-3">
+            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="400">
+              <div class="feature-item">
+                <i class="bi bi-check-circle-fill"></i>
+                <h5>Rugged Reliability</h5>
+                <p>From dust storms to rainstorms, SenseGrid delivers uninterrupted industrial intelligence under all conditions.</p>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in" data-aos-delay="450">
+              <div class="feature-item">
+                <i class="bi bi-lightbulb-fill"></i>
+                <h5>Industrial-Grade Design</h5>
+                <p>Engineered for real-world challenges, our solutions withstand time and terrain without compromise.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#feature-section" class="btn btn-primary mt-4">Explore Our Solutions</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-section mt-5 pt-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right" data-aos-delay="200">
+          <div class="testimonial-intro">
+            <h3>What Our Clients Say</h3>
+            <p>Explore stories from our partners who rely on SenseGrid to elevate their operational visibility and performance.</p>
+            <div class="swiper-nav-buttons mt-4">
+              <button class="slider-prev"><i class="bi bi-arrow-left"></i></button>
+              <button class="slider-next"><i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8" data-aos="fade-left" data-aos-delay="300">
+          <div class="testimonial-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 800,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": 1,
+                "spaceBetween": 30,
+                "navigation": {
+                  "nextEl": ".slider-next",
+                  "prevEl": ".slider-prev"
+                },
+                "breakpoints": {
+                  "768": {
+                    "slidesPerView": 2
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="rating mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>"SenseGrid's real-time monitoring gave us actionable insights and peace of mind. It's a game-changer."</p>
+                  <div class="client-info d-flex align-items-center mt-4">
+                    <img src="assets/img/dsi.png" class="client-img" alt="DSI" loading="lazy">
+                    <div>
+                      <h6 class="mb-0">DSI</h6>
+                      <span>Factory Partner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="rating mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>"The accuracy and ease of deployment impressed us from day one. We rely on Monitor One across multiple sites."</p>
+                  <div class="client-info d-flex align-items-center mt-4">
+                    <img src="assets/img/dhl.jpg" class="client-img" alt="DHL" loading="lazy">
+                    <div>
+                      <h6 class="mb-0">DHL</h6>
+                      <span>Logistics Operations</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="rating mb-3">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>"Mobitel’s integration with SenseGrid helped us enhance our industrial automation strategy significantly."</p>
+                  <div class="client-info d-flex align-items-center mt-4">
+                    <img src="assets/img/sri_lanka_mobitel.jpg" class="client-img" alt="Mobitel" loading="lazy">
+                    <div>
+                      <h6 class="mb-0">Mobitel</h6>
+                      <span>Technology Partner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<!-- /About Section -->
+
+
+    <!-- Services Section -->
+<section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <div><span>What We Offer</span> <span class="description-title">SenseGrid Solutions</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="service-header">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-12">
+          <div class="service-intro">
+            <h2 class="service-heading">
+              <div>Seamless Industrial</div>
+              <div><span>Intelligence Deployment</span></div>
+            </h2>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="service-summary">
+            <p>
+              SenseGrid delivers powerful, plug-and-play IIoT solutions to streamline machine monitoring, improve efficiency, and unlock real-time insights with minimal effort.
+            </p>
+            <a href="#contact" class="service-btn">
+              Get In Touch
+              <i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-cpu-fill"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Plug & Play <span>Monitoring</span>
+            </a>
+          </h3>
+          <p>
+            Instantly deploy smart sensors and devices without complex configuration or wiring. Power up, connect, and start tracking performance immediately.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Real-Time <span>Analytics</span>
+            </a>
+          </h3>
+          <p>
+            Access live dashboards, track performance metrics, and receive automated alerts to make smarter decisions faster, directly from any connected device.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-shield-lock-fill"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Secure <span>Cloud Access</span>
+            </a>
+          </h3>
+          <p>
+            Your data is safely encrypted and accessible globally via our cloud platform, enabling remote monitoring and management from anywhere at any time.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-broadcast-pin"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Wireless <span>Communication</span>
+            </a>
+          </h3>
+          <p>
+            Monitor One supports Wi-Fi, GSM, and Bluetooth to connect with your systems effortlessly—eliminating the need for wired infrastructure.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-thermometer-half"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Multi-Sensor <span>Support</span>
+            </a>
+          </h3>
+          <p>
+            Collect data from a variety of sensor types including current, vibration, and temperature sensors for a complete machine health overview.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card position-relative z-1">
+          <div class="service-icon">
+            <i class="bi bi-gear-wide-connected"></i>
+          </div>
+          <a href="service-details.html" class="card-action d-flex align-items-center justify-content-center rounded-circle">
+            <i class="bi bi-arrow-up-right"></i>
+          </a>
+          <h3>
+            <a href="service-details.html">
+              Edge <span>Computing</span>
+            </a>
+          </h3>
+          <p>
+            Run AI-powered diagnostics and machine learning models directly on the device, reducing latency and enabling smart decision-making at the source.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Services Section -->
+
+    <!-- Steps Section -->
+<section id="steps" class="steps section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Steps</h2>
+    <div><span>How</span> <span class="description-title">SenseGrid Works</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="steps-wrapper">
+
+      <!-- Step 1 -->
+      <div class="step-item" data-aos="fade-right" data-aos-delay="200">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-plug"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">Step 01</span>
+            <h3>Connect Your Device</h3>
+            <p>Simply install and power on your Monitor One. It instantly begins collecting sensor data via its plug-and-play design.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-item" data-aos="fade-left" data-aos-delay="300">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-wifi"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">Step 02</span>
+            <h3>Connect to Network</h3>
+            <p>Connect via Wi-Fi, GSM, or Bluetooth—no complex configuration needed. SenseGrid automatically syncs to the cloud.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-item" data-aos="fade-right" data-aos-delay="400">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-bar-chart-line"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">Step 03</span>
+            <h3>Access Real-Time Data</h3>
+            <p>Use our web or mobile dashboards to view live machine status, analyze trends, and receive instant alerts on anomalies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-item" data-aos="fade-left" data-aos-delay="500">
+        <div class="step-content">
+          <div class="step-icon">
+            <i class="bi bi-cpu"></i>
+          </div>
+          <div class="step-info">
+            <span class="step-number">Step 04</span>
+            <h3>Optimize Performance</h3>
+            <p>Leverage intelligent insights to optimize operations, reduce downtime, and scale your smart manufacturing with ease.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Steps Section -->
+
+
+    <!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
+
+      <!-- Left Content -->
+      <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
+        <span class="badge text-uppercase mb-2">Now Available</span>
+        <h2>Upgrade to Smarter Monitoring with SenseGrid</h2>
+        <p class="my-4">Empower your industrial operations with intelligent edge monitoring. SenseGrid’s IIoT solutions provide real-time visibility, enabling faster decisions and optimized performance—anytime, anywhere.</p>
+
+        <div class="features d-flex flex-wrap gap-3 mb-4">
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Plug & Play Setup</span>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Cloud & GSM Enabled</span>
+          </div>
+          <div class="feature-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <span>Instant Data Insights</span>
+          </div>
+        </div>
+
+        <div class="cta-buttons d-flex flex-wrap gap-3">
+          <a href="#waitlist" class="btn btn-primary">Join Waitlist</a>
+          <a href="#feature-section" class="btn btn-outline">How It Works</a>
+        </div>
+      </div>
+
+      <!-- Right Visual -->
+      <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
+        <img src="assets/img/misc/illustration.png" alt="SenseGrid Illustration" class="img-fluid rounded-4">
+        <div class="floating-card">
+          <div class="card-icon">
+            <i class="bi bi-bar-chart-line-fill"></i>
+          </div>
+          <div class="card-content">
+            <span class="stats-number">99.9%</span>
+            <span class="stats-text">Uptime Reliability</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="decoration">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+    <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <div><span>Check Our</span> <span class="description-title">Client Feedback</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="testimonials-slider swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+        {
+          "slidesPerView": 1,
+          "loop": true,
+          "speed": 600,
+          "autoplay": {
+            "delay": 5000
+          },
+          "navigation": {
+            "nextEl": ".swiper-button-next",
+            "prevEl": ".swiper-button-prev"
+          }
+        }
+      </script>
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <h2>SenseGrid revolutionized our monitoring</h2>
+                <p>
+                  “We deployed SenseGrid across our manufacturing units, and the results have been transformational. The real-time data insights and alert system saved us hours in maintenance response.”
+                </p>
+                <p>
+                  “Their integration with GSM and cloud was seamless, and the dashboard is user-friendly even for non-tech teams.”
+                </p>
+                <div class="profile d-flex align-items-center">
+                  <img src="assets/img/person/person-m-7.webp" class="profile-img" alt="">
+                  <div class="profile-info">
+                    <h3>Ruwan Perera</h3>
+                    <span>Factory Manager, TPI Textiles</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="featured-img-wrapper">
+                  <img src="assets/img/person/person-m-7.webp" class="featured-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Testimonial Item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <h2>Incredible reliability and service</h2>
+                <p>
+                  “We've tested several IIoT platforms, but none matched the uptime and accuracy of SenseGrid. It gives our operations team total confidence during daily production cycles.”
+                </p>
+                <p>
+                  “Setup took less than a day. The device and mobile notifications work perfectly, even in remote areas.”
+                </p>
+                <div class="profile d-flex align-items-center">
+                  <img src="assets/img/person/person-f-8.webp" class="profile-img" alt="">
+                  <div class="profile-info">
+                    <h3>Nirosha Wijesinghe</h3>
+                    <span>Maintenance Lead, AgroTech PLC</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="featured-img-wrapper">
+                  <img src="assets/img/person/person-f-8.webp" class="featured-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Testimonial Item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="row">
+              <div class="col-lg-8">
+                <h2>Data visibility like never before</h2>
+                <p>
+                  “Using SenseGrid, we were finally able to track current and temperature metrics from all machines in real time. This transparency has helped us reduce electrical failures and unplanned downtime.”
+                </p>
+                <p>
+                  “The mobile app dashboard and web view are intuitive and powerful.”
+                </p>
+                <div class="profile d-flex align-items-center">
+                  <img src="assets/img/person/person-m-9.webp" class="profile-img" alt="">
+                  <div class="profile-info">
+                    <h3>Kasun Alwis</h3>
+                    <span>Head of Engineering, SmartMills</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 d-none d-lg-block">
+                <div class="featured-img-wrapper">
+                  <img src="assets/img/person/person-m-9.webp" class="featured-img" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- End Testimonial Item -->
+
+      </div>
+
+      <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section><!-- /Testimonials Section -->
+
+
+    <!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <div><span>Explore Our</span> <span class="description-title">SenseGrid Projects</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+        <li data-filter="*" class="filter-active">
+          <i class="bi bi-grid-3x3"></i> All
+        </li>
+        <li data-filter=".filter-hardware">
+          <i class="bi bi-cpu"></i> Hardware
+        </li>
+        <li data-filter=".filter-software">
+          <i class="bi bi-code-slash"></i> Software
+        </li>
+        <li data-filter=".filter-iot">
+          <i class="bi bi-wifi"></i> IoT
+        </li>
+        <li data-filter=".filter-ui">
+          <i class="bi bi-phone"></i> UI/UX
+        </li>
+      </ul>
+
+      <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+        <!-- IoT Project -->
+        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-iot">
+          <article class="portfolio-entry">
+            <figure class="entry-image">
+              <img src="assets/img/portfolio/sensegrid-1.webp" class="img-fluid" alt="IoT Sensor System" loading="lazy">
+              <div class="entry-overlay">
+                <div class="overlay-content">
+                  <div class="entry-meta">IoT</div>
+                  <h3 class="entry-title">Machine Monitoring System</h3>
+                  <div class="entry-links">
+                    <a href="assets/img/portfolio/sensegrid-1.webp" class="glightbox" data-gallery="portfolio-gallery-iot" data-glightbox="title: Machine Monitoring System; description: Real-time monitoring using IR, K-Type and current sensors with ESP32 & GSM.">
+                      <i class="bi bi-arrows-angle-expand"></i>
+                    </a>
+                    <a href="portfolio-details.html">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+        <!-- UI/UX App -->
+        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+          <article class="portfolio-entry">
+            <figure class="entry-image">
+              <img src="assets/img/portfolio/sensegrid-ui.webp" class="img-fluid" alt="Mobile Dashboard" loading="lazy">
+              <div class="entry-overlay">
+                <div class="overlay-content">
+                  <div class="entry-meta">UI/UX</div>
+                  <h3 class="entry-title">Mobile Monitoring Dashboard</h3>
+                  <div class="entry-links">
+                    <a href="assets/img/portfolio/sensegrid-ui.webp" class="glightbox" data-gallery="portfolio-gallery-ui" data-glightbox="title: Mobile Dashboard; description: Android-based interface for visualizing sensor data and alerts.">
+                      <i class="bi bi-arrows-angle-expand"></i>
+                    </a>
+                    <a href="portfolio-details.html">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+        <!-- Hardware Section -->
+        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-hardware">
+          <article class="portfolio-entry">
+            <figure class="entry-image">
+              <img src="assets/img/portfolio/sensegrid-hw.webp" class="img-fluid" alt="PCB and Wiring" loading="lazy">
+              <div class="entry-overlay">
+                <div class="overlay-content">
+                  <div class="entry-meta">Hardware</div>
+                  <h3 class="entry-title">Sensor Node Development</h3>
+                  <div class="entry-links">
+                    <a href="assets/img/portfolio/sensegrid-hw.webp" class="glightbox" data-gallery="portfolio-gallery-hardware" data-glightbox="title: Sensor Node; description: Custom PCB with voltage regulators, GSM, and sensor interfacing.">
+                      <i class="bi bi-arrows-angle-expand"></i>
+                    </a>
+                    <a href="portfolio-details.html">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+        <!-- Software Dashboard -->
+        <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-software">
+          <article class="portfolio-entry">
+            <figure class="entry-image">
+              <img src="assets/img/portfolio/sensegrid-web.webp" class="img-fluid" alt="Web Dashboard" loading="lazy">
+              <div class="entry-overlay">
+                <div class="overlay-content">
+                  <div class="entry-meta">Software</div>
+                  <h3 class="entry-title">Cloud Web Platform</h3>
+                  <div class="entry-links">
+                    <a href="assets/img/portfolio/sensegrid-web.webp" class="glightbox" data-gallery="portfolio-gallery-software" data-glightbox="title: Cloud Web Platform; description: Centralized monitoring with real-time charts, alerts and control via MQTT.">
+                      <i class="bi bi-arrows-angle-expand"></i>
+                    </a>
+                    <a href="portfolio-details.html">
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </figure>
+          </article>
+        </div>
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Portfolio Section -->
+
+
+    <!-- Team Section -->
+<section id="team" class="team section light-background">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Our Team</h2>
+    <div><span>Meet the</span> <span class="description-title">SenseGrid Team</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="assets/img/person/person-m-5.webp" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Name</h4>
+            <span>Project Lead / Embedded Systems Engineer</span>
+            <p>Architected the entire SenseGrid platform and designed core logic for sensor interfacing and ESP32 integration.</p>
+            <div class="social">
+              <a href="https://www.facebook.com"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="assets/img/person/person-m-1.webp" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Name</h4>
+            <span>Full Stack Developer</span>
+            <p>Developed the SenseGrid web and mobile dashboards with MQTT integration and dynamic device control.</p>
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="assets/img/person/person-f-9.webp" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Name</h4>
+            <span>UI/UX Designer</span>
+            <p>Crafted the user-friendly design system used in the SenseGrid mobile app and web dashboard with dark mode support.</p>
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-behance"></i></a>
+              <a href="#"><i class="bi bi-dribbble"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="team-member d-flex">
+          <div class="member-img">
+            <img src="assets/img/person/person-f-1.webp" class="img-fluid" alt="" loading="lazy">
+          </div>
+          <div class="member-info flex-grow-1">
+            <h4>Name</h4>
+            <span>IoT Specialist</span>
+            <p>Handled sensor integration, calibration, and real-time data acquisition using current sensors, IR, and K-type thermocouples.</p>
+            <div class="social">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Team Member -->
+
+    </div>
+
+  </div>
+
+</section><!-- /Team Section -->
+
+
+    <!-- Pricing Section -->
+<section id="pricing" class="pricing section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Pricing</h2>
+    <div><span>Choose Your</span> <span class="description-title">SenseGrid Plan</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+
+      <!-- Basic Plan -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-icon">
+              <i class="bi bi-box"></i>
+            </div>
+            <h3>Starter</h3>
+            <p>For small teams or startups beginning IoT monitoring</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">9</span>
+              <span class="period">/month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Up to 3 devices</li>
+              <li><i class="bi bi-check-circle-fill"></i> Real-time monitoring</li>
+              <li><i class="bi bi-check-circle-fill"></i> Mobile dashboard access</li>
+              <li class="disabled"><i class="bi bi-x-circle-fill"></i> Advanced analytics</li>
+              <li class="disabled"><i class="bi bi-x-circle-fill"></i> Priority support</li>
+            </ul>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-plan">Choose Plan</a>
+          </div>
+        </div>
+      </div><!-- End Starter Plan -->
+
+      <!-- Professional Plan -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+        <div class="pricing-card popular">
+          <div class="popular-tag">Most Popular</div>
+          <div class="plan-header">
+            <div class="plan-icon">
+              <i class="bi bi-briefcase"></i>
+            </div>
+            <h3>Professional</h3>
+            <p>Ideal for growing businesses and factories</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">29</span>
+              <span class="period">/month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Up to 10 devices</li>
+              <li><i class="bi bi-check-circle-fill"></i> Real-time + historical data</li>
+              <li><i class="bi bi-check-circle-fill"></i> Alerts & email notifications</li>
+              <li><i class="bi bi-check-circle-fill"></i> Data export (CSV/JSON)</li>
+              <li class="disabled"><i class="bi bi-x-circle-fill"></i> Dedicated support line</li>
+            </ul>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-plan">Choose Plan</a>
+          </div>
+        </div>
+      </div><!-- End Professional Plan -->
+
+      <!-- Enterprise Plan -->
+      <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+        <div class="pricing-card">
+          <div class="plan-header">
+            <div class="plan-icon">
+              <i class="bi bi-building"></i>
+            </div>
+            <h3>Enterprise</h3>
+            <p>Best for large-scale operations & industries</p>
+          </div>
+          <div class="plan-pricing">
+            <div class="price">
+              <span class="currency">$</span>
+              <span class="amount">59</span>
+              <span class="period">/month</span>
+            </div>
+          </div>
+          <div class="plan-features">
+            <ul>
+              <li><i class="bi bi-check-circle-fill"></i> Unlimited device support</li>
+              <li><i class="bi bi-check-circle-fill"></i> Cloud-based data backup</li>
+              <li><i class="bi bi-check-circle-fill"></i> Custom dashboards</li>
+              <li><i class="bi bi-check-circle-fill"></i> API access & integrations</li>
+              <li><i class="bi bi-check-circle-fill"></i> 24/7 dedicated support</li>
+            </ul>
+          </div>
+          <div class="plan-cta">
+            <a href="#" class="btn-plan">Choose Plan</a>
+          </div>
+        </div>
+      </div><!-- End Enterprise Plan -->
+
+    </div>
+  </div>
+
+</section><!-- /Pricing Section -->
+
+
+    <!-- FAQ Section -->
+<section class="faq-9 faq section" id="faq">
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-5" data-aos="fade-up">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+        <p class="faq-description">Need help understanding how SenseGrid works? Here are answers to some common questions about device setup, monitoring, and more.</p>
+        <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+          <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+              </svg>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+        <div class="faq-container">
+
+          <div class="faq-item faq-active">
+            <h3>What devices are supported by SenseGrid?</h3>
+            <div class="faq-content">
+              <p>SenseGrid supports IR sensors, K-type temperature sensors, current sensors, and other industrial monitoring devices via ESP32. Custom sensors can also be integrated with minimal configuration.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Do I need internet to use the SenseGrid system?</h3>
+            <div class="faq-content">
+              <p>Yes. SenseGrid uses Wi-Fi or GSM (via SIM module) for real-time data transmission. An internet connection is required for accessing the dashboard and alerts remotely.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I monitor multiple machines at once?</h3>
+            <div class="faq-content">
+              <p>Absolutely. You can connect and monitor multiple machines across different locations using the same dashboard. Each device has a unique ID for organized tracking.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>How are alerts and notifications handled?</h3>
+            <div class="faq-content">
+              <p>Thresholds can be set for each sensor. When a reading exceeds the limit, you’ll receive instant mobile or email alerts via our ThingsBoard integration or custom logic rules.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Can I access the system on mobile?</h3>
+            <div class="faq-content">
+              <p>Yes, our system includes a mobile-friendly dashboard so you can view real-time data, receive alerts, and manage devices directly from your phone or tablet.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+          <div class="faq-item">
+            <h3>Is support available if I run into issues?</h3>
+            <div class="faq-content">
+              <p>We offer email and chat support for all plans. Enterprise users also receive dedicated phone support and custom integration assistance.</p>
+            </div>
+            <i class="faq-toggle bi bi-chevron-right"></i>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><!-- /FAQ Section -->
+
+
+    <!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div><span>Let’s</span> <span class="description-title">Connect</span></div>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Contact Info Boxes -->
+    <div class="row gy-4 mb-5">
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="info-content">
+            <h4>Our Address</h4>
+            <p>SLT Digital Lab, Sri Lanka Telecom PLC, Lotus Road, Colombo 01, Sri Lanka.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div class="info-content">
+            <h4>Email Address</h4>
+            <p>digitallab@slt.com.lk</p>
+            <p>info@sensegrid.lk</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-headset"></i>
+          </div>
+          <div class="info-content">
+            <h4>Operating Hours</h4>
+            <p>Mon - Fri: 8.30 AM - 5.30 PM</p>
+            <p>Sat - Sun: 9.00 AM - 1.00 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Google Maps (Full Width) -->
+  <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4590.398227764787!2d79.84169647011264!3d6.933480104812046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25911c7c8e495%3A0xc7d13f7ac0758b1e!2sSLT-MOBITEL!5e0!3m2!1sen!2slk!4v1752925657560!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Contact Form Section (Overlapping) -->
+  <div class="container form-container-overlap">
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+      <div class="col-lg-10">
+        <div class="contact-form-wrapper">
+          <h2 class="text-center mb-4">Get in Touch</h2>
+
+          <form action="forms/contact.php" method="post" class="php-email-form">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-person"></i>
+                    <input type="text" class="form-control" name="name" placeholder="First Name" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-envelope"></i>
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-text-left"></i>
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-chat-dots message-icon"></i>
+                    <textarea class="form-control" name="message" placeholder="Write Message..." style="height: 180px" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary btn-submit">SEND MESSAGE</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section><!-- /Contact Section -->
+
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">SenseGrid</span>
+        </a>
+        <p>SenseGrid offers intelligent machine monitoring solutions using cutting-edge IoT, enabling real-time data collection, efficiency tracking, and predictive insights for industries.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Machine Monitoring</a></li>
+          <li><a href="#">Real-time Analytics</a></li>
+          <li><a href="#">Temperature & Current Sensors</a></li>
+          <li><a href="#">IoT Integrations</a></li>
+          <li><a href="#">Cloud Dashboards</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>SLT Digital Lab, Sri Lanka Telecom PLC</p>
+        <p>Lotus Road, Colombo 01,</p>
+        <p>Sri Lanka</p>
+        <p class="mt-4"><strong>Phone:</strong> <span>+94 11-2432755</span></p>
+        <p><strong>Email:</strong> <span>digitallab@slt.com.lk</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">SenseGrid</strong> <span>All Rights Reserved</span></p>
+    <div class="credits">
+      Designed by <a href="https://janithaththanayaka.com/">Janith</a>
+    </div>
+  </div>
+
+</footer>
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Bootstrap Bundle JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- AOS (Animate On Scroll) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.js"></script>
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.4.0/dist/js/glightbox.min.js"></script>
+
+<!-- imagesLoaded -->
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+<!-- Isotope Layout -->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
