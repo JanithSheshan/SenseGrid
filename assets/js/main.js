@@ -1,5 +1,30 @@
 
 (function() {
+
+  // Scrollspy for nav active state
+      document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('#navmenu ul li a');
+
+      function onScroll() {
+        let scrollPos = window.scrollY + 120; // Offset for header height
+        let currentId = '';
+        sections.forEach(section => {
+        if (scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+          currentId = section.getAttribute('id');
+        }
+        });
+        navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentId) {
+          link.classList.add('active');
+        }
+        });
+      }
+
+      window.addEventListener('scroll', onScroll);
+      onScroll();
+      });
   "use strict";
 
   /**

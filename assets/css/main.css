@@ -3782,3 +3782,64 @@ section,
     font-size: 16px;
   }
 }
+
+
+/*--------------------------------------------------------------
+# Client Devices Section
+--------------------------------------------------------------*/
+#client-devices {
+  --section-spacing: 2rem;
+  padding: var(--section-spacing) 0;
+}
+
+#client-devices .section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#client-devices .card-body {
+  padding: 20px;
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#client-devices .card-body:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#client-devices .card-body h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+#client-devices .card-body p {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 0;
+}
+
+#client-devices .border-dashed {
+  border: 2px dashed #ced4da;
+  background-color: #f8f9fa;
+  color: #6c757d;
+}
+
+#client-devices .row {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+#client-devices .card {
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#client-devices .text-muted {
+  color: color-mix(in srgb, var(--default-color), transparent 50%) !important;
+}
