@@ -3843,3 +3843,11 @@ section,
 #client-devices .text-muted {
   color: color-mix(in srgb, var(--default-color), transparent 50%) !important;
 }
+
+.modal-content {
+  border-radius: 12px;
+}
+
+.modal-body p {
+  font-size: 0.95rem;
+}
