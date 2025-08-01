@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DHL Asset Tracker – Case Study</title>
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/glightbox@3.4.0/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@10.2.0/swiper-bundle.min.css" rel="stylesheet">
+
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <style>
+    body {
+        background: #0a1a2f;
+        font-family: 'Source Sans Pro', Arial, sans-serif;
+        color: #e9f2fb;
+        min-height: 100vh;
+        font-size: 1.08rem;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        background: #162a47;
+        box-shadow: 0 2px 8px rgba(13, 33, 56, 0.10);
+        border-radius: 0 0 1rem 1rem;
+        padding: 1.5rem 0;
+        font-size: 1.15rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    h2, h4, h5, h6 {
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 0.5px;
+    }
+
+    h2 {
+        font-size: 2.7rem;
+        font-weight: 700;
+        color: #e9f2fb;
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+
+    h4 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 1.35rem;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    .section-title h2 {
+        font-size: 2.7rem;
+        font-weight: 700;
+        color: #e9f2fb;
+        margin-bottom: 0.5rem;
+        line-height: 1.1;
+    }
+
+    .section-title p {
+        font-size: 1.2rem;
+        color: #b0c4de;
+    }
+
+    .highlight-box {
+        background: #162a47;
+        border-radius: 1.25rem;
+        box-shadow: 0 2px 16px rgba(13, 33, 56, 0.18);
+        padding: 1.5rem 1.75rem;
+        margin-bottom: 1.5rem;
+        transition: box-shadow 0.2s, transform 0.2s;
+        color: #e9f2fb;
+        border: 1px solid #223a5f;
+        font-size: 1.08rem;
+        backdrop-filter: blur(2px);
+        background: rgba(22, 42, 71, 0.95);
+    }
+
+    .highlight-box h5, .highlight-box h6 {
+        margin-bottom: 0.5rem;
+    }
+
+    .highlight-box ul {
+        padding-left: 1.2rem;
+        font-size: 1.05rem;
+    }
+
+    .img-fluid {
+        border-radius: 1.25rem;
+        box-shadow: 0 6px 32px rgba(13, 33, 56, 0.22);
+        object-fit: cover;
+        aspect-ratio: 16/10;
+        width: 100%;
+        max-height: 340px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .img-fluid:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 40px rgba(13, 33, 56, 0.32);
+    }
+
+    .section-split-box .card {
+        background: linear-gradient(120deg, #162a47 80%, #223a5f 100%);
+        color: #e9f2fb;
+        border: none;
+        border-radius: 1.25rem;
+        box-shadow: 0 2px 16px rgba(13, 33, 56, 0.18);
+        transition: box-shadow 0.2s, transform 0.2s;
+        padding: 2rem 1.5rem;
+        min-height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.08rem;
+    }
+    .section-split-box .card:hover {
+        box-shadow: 0 8px 32px rgba(13, 33, 56, 0.28);
+        transform: translateY(-4px) scale(1.01);
+    }
+
+    .section-split-box .card h5 {
+        color: #e9f2fb;
+        font-size: 1.25rem;
+    }
+
+    .section-split-box ul li span {
+        color: #4da3ff;
+        font-size: 1.1rem;
+    }
+
+    .section-split-box ul {
+        padding-left: 1.2rem;
+        font-size: 1.05rem;
+    }
+
+    @media (min-width: 768px) {
+        .section-split-box .card {
+            height: 100%;
+        }
+    }
+
+    .btn-primary, .btn-outline-primary {
+        border-radius: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(13, 33, 56, 0.18);
+        transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+        background-color: #223a5f;
+        border-color: #4da3ff;
+        color: #e9f2fb;
+        padding: 0.75rem 2rem;
+        font-size: 1.1rem;
+    }
+
+    .btn-primary:hover, .btn-outline-primary:hover {
+        background-color: #4da3ff;
+        color: #162a47;
+        box-shadow: 0 4px 16px rgba(13, 33, 56, 0.28);
+        text-decoration: none;
+    }
+
+    footer {
+        background: #162a47;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: 0 -2px 8px rgba(13, 33, 56, 0.10);
+        color: #b0c4de;
+        padding: 2rem 0 1rem 0;
+        font-size: 1rem;
+    }
+
+    .text-secondary {
+        color: #b0c4de !important;
+        font-size: 1.08rem;
+    }
+
+    .mt-5 {
+        margin-top: 3rem !important;
+    }
+
+    .py-5 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .shadow {
+        box-shadow: 0 6px 32px rgba(13, 33, 56, 0.22) !important;
+    }
+
+    hr {
+        border-color: #223a5f;
+        opacity: 0.7;
+    }
+
+    section:not(:last-child) {
+        border-bottom: 1px solid #223a5f;
+        margin-bottom: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .bi {
+        font-size: 1.3em;
+        vertical-align: middle;
+    }
+
+    .section-title h2 {
+        position: relative;
+    }
+    .section-title h2::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(90deg, #4da3ff 0%, #223a5f 100%);
+        border-radius: 2px;
+        margin: 0.5rem auto 0 auto;
+        animation: underlineFadeIn 1s ease;
+    }
+    @keyframes underlineFadeIn {
+        from { width: 0; opacity: 0; }
+        to { width: 60px; opacity: 1; }
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 767px) {
+        .section-title h2 {
+            font-size: 2rem;
+        }
+        .img-fluid {
+            max-height: 220px;
+        }
+        .section-split-box .card {
+            padding: 1.2rem 0.7rem;
+            font-size: 1rem;
+        }
+        .highlight-box {
+            padding: 1rem 1rem;
+            font-size: 1rem;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <header class="border-bottom">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <h4 class="mb-0 fw-bold"><i class="bi bi-box-seam me-2"></i>DHL Asset Tracker</h4>
+            <a href="index.html#client-devices" class="btn btn-outline-primary mt-2 mt-md-0">Back to Home</a>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2>Real-Time Asset Tracking</h2>
+            <p class="text-muted">How DHL optimized its cold chain logistics using SenseGrid's IoT-based asset tracker</p>
+        </div>
+
+        <div class="row gy-4 align-items-center">
+            <!-- Left side: image + first two highlight boxes -->
+            <div class="col-md-6" data-aos="fade-right">
+                <img src="assets/img/dhl.jpg" alt="DHL Tracker" class="img-fluid rounded shadow mb-4" loading="lazy" />
+                <div class="highlight-box mb-3">
+                    <h5><i class="bi bi-building me-2"></i>Client: DHL Sri Lanka</h5>
+                    <p>DHL required a resilient, temperature-aware asset tracking solution for sensitive goods in transit through Sri Lanka’s logistics network.</p>
+                </div>
+                <div class="highlight-box mb-3">
+                    <h6 class="text-danger fw-semibold"><i class="bi bi-exclamation-circle me-1"></i>Problem</h6>
+                    <p>Lack of live temperature visibility and GPS tracking across their delivery fleet, especially for cold chain shipments.</p>
+                </div>
+            </div>
+            <!-- Right side: last two highlight boxes + second image -->
+            <div class="col-md-6" data-aos="fade-left">
+                <div class="highlight-box mb-3">
+                    <h6 class="text-primary fw-semibold"><i class="bi bi-lightbulb me-1"></i>Client Request</h6>
+                    <p>A compact GPS-enabled device capable of GSM data transmission and temperature monitoring in real time.</p>
+                </div>
+                <div class="highlight-box mb-3">
+                    <h6 class="text-success fw-semibold"><i class="bi bi-check-circle me-1"></i>Solution Delivered</h6>
+                    <ul class="mb-0">
+                        <li>GSM-based asset tracker with GPS & onboard storage</li>
+                        <li>Integrated digital temperature sensor</li>
+                        <li>Battery-operated, compact enclosure (IP65)</li>
+                        <li>Connected to SenseGrid cloud with live dashboards & alerts</li>
+                    </ul>
+                </div>
+                <img src="assets/img/dhl.jpg" alt="DHL Tracker Device" class="img-fluid rounded shadow mt-4" loading="lazy" />
+            </div>
+        </div>
+
+        <hr class="my-5" />
+
+        <section class="row g-4 section-split-box" data-aos="fade-up">
+            <div class="col-12 col-md-6">
+                <div class="card rounded shadow-sm h-100">
+                    <h5 class="text-danger fw-semibold mb-3"><i class="bi bi-exclamation-triangle me-2"></i>Challenges</h5>
+                    <ul class="mb-0 ps-3">
+                        <li>Inconsistent monitoring of temperature-sensitive cargo during transit</li>
+                        <li>No centralized real-time data dashboard for logistics supervisors</li>
+                        <li>Manual reporting caused SLA violations and late responses to failures</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="card rounded shadow-sm h-100">
+                    <h5 class="text-success fw-semibold mb-3"><i class="bi bi-bar-chart-line me-2"></i>Key Results</h5>
+                    <ul class="mb-0 ps-3">
+                        <li><span class="fw-bold">15+</span> smart trackers deployed across refrigerated containers</li>
+                        <li><span class="fw-bold">2°C</span> deviation range maintained with real-time temperature alerts</li>
+                        <li><span class="fw-bold">90%</span> improvement in delivery assurance for sensitive cargo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5" data-aos="fade-up">
+            <h4 class="mb-3"><i class="bi bi-graph-up-arrow me-2"></i>Impact</h4>
+            <p>DHL now monitors its cold chain assets in real time, minimizing delivery failures and improving trust with high-value customers. The system delivers alerts for temperature threshold violations, low battery, and delayed movement.</p>
+            <p>Through SenseGrid dashboards, regional logistics coordinators receive continuous insights, enabling faster decisions, SLA compliance, and superior customer satisfaction.</p>
+        </section>
+
+        <section class="mt-5" data-aos="fade-up">
+            <h5 class="text-secondary"><i class="bi bi-lightning me-2"></i>What’s Next?</h5>
+            <p>DHL plans to expand the system to support door-open sensors and additional data points like humidity and vibration for their premium goods logistics.</p>
+        </section>
+
+        <div class="text-center mt-5">
+            <a href="index.html#contact" class="btn btn-primary px-4 py-2 shadow"><i class="bi bi-chat-dots me-2"></i>Talk to Our IoT Team</a>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container text-center">
+            <small>&copy; 2025 SenseGrid. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>

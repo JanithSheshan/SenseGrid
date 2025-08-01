@@ -323,56 +323,62 @@
     <!-- /About Section -->
 
     <!-- Client Devices Section -->
-<section id="client-devices" class="device-types section">
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Client Devices</h2>
-    <div><span>Custom-Built for</span> <span class="description-title">Your Needs</span></div>
-    <p class="text-muted">We engineer devices with tailored sensors, connectivity, and firmware for each industry partner.</p>
-  </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div class="row g-4 justify-content-start flex-nowrap overflow-auto px-2" style="scroll-snap-type: x mandatory;">
-      
-      <!-- DSI Device -->
-      <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#dsiProductionModal" class="text-decoration-none">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="assets/img/dsi.png" class="card-img-top mx-auto" alt="DSI Production Monitor" loading="lazy" style="max-height:120px;object-fit:contain;">
-            <div class="card-body">
-              <h5 class="card-title">DSI Production Monitor</h5>
-              <p class="card-text small">Factory monitoring with custom sensors and GSM connectivity.</p>
-            </div>
-          </div>
-        </a>
+    <section id="client-devices" class="device-types section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Client Devices</h2>
+        <div><span>Custom-Built for</span> <span class="description-title">Your Needs</span></div>
+        <p class="text-muted">We engineer devices with tailored sensors, connectivity, and firmware for each industry
+          partner.</p>
       </div>
 
-      <!-- DHL Device -->
-      <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
-        <a href="#" class="device-card text-decoration-none" data-bs-toggle="modal" data-bs-target="#dhlTrackerModal">
-          <div class="card h-100 text-center shadow-sm border-0">
-            <img src="assets/img/dhl.jpg" class="card-img-top mx-auto" alt="DHL Asset Tracker" loading="lazy" style="max-height:140px; object-fit:contain;">
-            <div class="card-body">
-              <h5 class="card-title">DHL Asset Tracker</h5>
-              <p class="card-text small">Custom-built GPS tracker with GSM & temperature logging for DHL's cold chain logistics.</p>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row g-4 justify-content-start flex-nowrap overflow-auto px-2"
+          style="scroll-snap-type: x mandatory;">
+
+          <!-- DSI Device -->
+          <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#dsiProductionModal" class="text-decoration-none">
+              <div class="card h-100 text-center shadow-sm border-0">
+                <img src="assets/img/dsi.png" class="card-img-top mx-auto" alt="DSI Production Monitor" loading="lazy"
+                  style="max-height:120px;object-fit:contain;">
+                <div class="card-body">
+                  <h5 class="card-title">DSI Production Monitor</h5>
+                  <p class="card-text small">Factory monitoring with custom sensors and GSM connectivity.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- DHL Device -->
+          <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
+            <a href="#" class="device-card text-decoration-none" data-bs-toggle="modal"
+              data-bs-target="#dhlTrackerModal">
+              <div class="card h-100 text-center shadow-sm border-0">
+                <img src="assets/img/dhl.jpg" class="card-img-top mx-auto" alt="DHL Asset Tracker" loading="lazy"
+                  style="max-height:140px; object-fit:contain;">
+                <div class="card-body">
+                  <h5 class="card-title">DHL Asset Tracker</h5>
+                  <p class="card-text small">Custom-built GPS tracker with GSM & temperature logging for DHL's cold
+                    chain logistics.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Future Clients -->
+          <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
+            <div class="card h-100 text-center border-dashed shadow-none">
+              <div class="card-body d-flex flex-column justify-content-center align-items-center py-5">
+                <i class="bi bi-plus-circle display-4 text-muted"></i>
+                <h5 class="card-title mt-3">New Device</h5>
+                <p class="card-text small">More industry-specific devices coming soon...</p>
+              </div>
             </div>
           </div>
-        </a>
-      </div>
 
-      <!-- Future Clients -->
-      <div class="col-lg-4 col-md-6 col-10 d-inline-block" style="scroll-snap-align: start;">
-        <div class="card h-100 text-center border-dashed shadow-none">
-          <div class="card-body d-flex flex-column justify-content-center align-items-center py-5">
-            <i class="bi bi-plus-circle display-4 text-muted"></i>
-            <h5 class="card-title mt-3">New Device</h5>
-            <p class="card-text small">More industry-specific devices coming soon...</p>
-          </div>
         </div>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
     <!-- /Client Devices Section -->
 
 
@@ -1466,147 +1472,179 @@
   </script>
 
 
-<!-- DSI Production Modal (Improved Dark Theme) -->
-<div class="modal fade" id="dsiProductionModal" tabindex="-1" aria-labelledby="dsiProductionModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow-lg rounded-4" style="background: var(--background-color); color: var(--default-color);">
-      <div class="modal-header border-0 py-3 px-4" style="background: var(--background-color);">
-        <h5 class="modal-title fw-bold" id="dsiProductionModalLabel" style="color: var(--contrast-color); letter-spacing: 1px;">
-          <i class="bi bi-cpu-fill me-2" style="color: #1976d2;"></i>DSI Production Monitor
-        </h5>
-        <button type="button" class="btn-close" style="filter: invert(1);" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-4">
-        <div class="row align-items-center gy-4">
-          <div class="col-12 col-md-5 text-center">
-            <div class="bg-gradient rounded-3 shadow-sm p-3" style="background: linear-gradient(135deg,#23272f 60%,#0057B7 100%);">
-              <img src="assets/img/dsi.png" alt="DSI Monitor" class="img-fluid rounded-3" style="max-height:160px; object-fit:contain;">
+  <!-- DSI Production Modal (Improved Dark Theme) -->
+  <div class="modal fade" id="dsiProductionModal" tabindex="-1" aria-labelledby="dsiProductionModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content border-0 shadow-lg rounded-4"
+        style="background: var(--background-color); color: var(--default-color);">
+        <div class="modal-header border-0 py-3 px-4" style="background: var(--background-color);">
+          <h5 class="modal-title fw-bold" id="dsiProductionModalLabel"
+            style="color: var(--contrast-color); letter-spacing: 1px;">
+            <i class="bi bi-cpu-fill me-2" style="color: #1976d2;"></i>DSI Production Monitor
+          </h5>
+          <button type="button" class="btn-close" style="filter: invert(1);" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <div class="row align-items-center gy-4">
+            <div class="col-12 col-md-5 text-center">
+              <div class="bg-gradient rounded-3 shadow-sm p-3"
+                style="background: linear-gradient(135deg,#23272f 60%,#0057B7 100%);">
+                <img src="assets/img/dsi.png" alt="DSI Monitor" class="img-fluid rounded-3"
+                  style="max-height:160px; object-fit:contain;">
+              </div>
+              <div class="mt-3">
+                <span class="badge rounded-pill px-3 py-2" style="background:#0057B7; color:#fff; font-size:0.95rem;">
+                  <i class="bi bi-building me-1"></i> DSI Footwear Factory
+                </span>
+              </div>
             </div>
-            <div class="mt-3">
-              <span class="badge rounded-pill px-3 py-2" style="background:#0057B7; color:#fff; font-size:0.95rem;">
-                <i class="bi bi-building me-1"></i> DSI Footwear Factory
-              </span>
-            </div>
-          </div>
-          <div class="col-12 col-md-7">
-            <!-- Problem -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #d32f2f; color: #fff;">Problem</span>
-              <p class="mb-2 small">
-                Lack of real-time visibility into temperature, machine status, and electrical consumption caused inefficiencies and unreported failures.
-              </p>
-            </div>
-            <!-- Request -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #1976d2; color: #fff;">Client Request</span>
-              <p class="mb-2 small">
-                A rugged, industrial-grade system to capture real-time sensor data (heat, current, operational state) and send updates via GSM, independent of Wi-Fi.
-              </p>
-            </div>
-            <!-- What We Delivered -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #388e3c; color: #fff;">What We Delivered</span>
-              <ul class="small ps-3 mb-2" style="list-style: disc;">
-                <li>Infrared sensors for surface temperature</li>
-                <li>K-Type thermocouples for internal monitoring</li>
-                <li>Current sensors for power usage & uptime</li>
-                <li>GSM module for direct cloud communication</li>
-              </ul>
-            </div>
-            <!-- Deployment & Impact -->
-            <div>
-              <span class="badge fw-semibold mb-1" style="background: #5d4037; color: #fff;">Deployment & Impact</span>
-              <p class="mb-0 small">
-                Deployed in under 2 hours per line. Immediate data availability led to 60% faster anomaly response and reduced downtime.
-              </p>
+            <div class="col-12 col-md-7">
+              <!-- Problem -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #d32f2f; color: #fff;">Problem</span>
+                <p class="mb-2 small">
+                  Lack of real-time visibility into temperature, machine status, and electrical consumption caused
+                  inefficiencies and unreported failures.
+                </p>
+              </div>
+              <!-- Request -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #1976d2; color: #fff;">Client Request</span>
+                <p class="mb-2 small">
+                  A rugged, industrial-grade system to capture real-time sensor data (heat, current, operational state)
+                  and send updates via GSM, independent of Wi-Fi.
+                </p>
+              </div>
+              <!-- What We Delivered -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #388e3c; color: #fff;">What We Delivered</span>
+                <ul class="small ps-3 mb-2" style="list-style: disc;">
+                  <li>Infrared sensors for surface temperature</li>
+                  <li>K-Type thermocouples for internal monitoring</li>
+                  <li>Current sensors for power usage & uptime</li>
+                  <li>GSM module for direct cloud communication</li>
+                </ul>
+              </div>
+              <!-- Deployment & Impact -->
+              <div>
+                <span class="badge fw-semibold mb-1" style="background: #5d4037; color: #fff;">Deployment &
+                  Impact</span>
+                <p class="mb-0 small">
+                  Deployed in under 2 hours per line. Immediate data availability led to 60% faster anomaly response and
+                  reduced downtime.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
-      </div>
-      <div class="modal-footer border-0 py-3 px-4 d-flex justify-content-center" style="background: var(--background-color);">
-        <button type="button" class="btn px-4 rounded-pill" style="border:1px solid var(--contrast-color); color: var(--contrast-color); background:transparent;" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle me-1"></i>Close
-        </button>
+        <div class="modal-footer border-0 py-3 px-4 d-flex justify-content-center gap-2"
+          style="background: var(--background-color);">
+          <a href="dsi-monitoring.html" class="btn btn-primary px-4 rounded-pill">
+            <i class="bi bi-info-circle me-1"></i>See More Details
+          </a>
+          <button type="button" class="btn px-4 rounded-pill"
+            style="border:1px solid var(--contrast-color); color: var(--contrast-color); background:transparent;"
+            data-bs-dismiss="modal">
+            <i class="bi bi-x-circle me-1"></i>Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 
-<!-- DHL Asset Tracker Modal -->
-<div class="modal fade" id="dhlTrackerModal" tabindex="-1" aria-labelledby="dhlTrackerModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content border-0 shadow-lg rounded-4" style="background: var(--background-color); color: var(--default-color);">
-      <div class="modal-header border-0 py-3 px-4" style="background: var(--background-color);">
-        <h5 class="modal-title fw-bold" id="dhlTrackerModalLabel" style="color: var(--contrast-color); letter-spacing: 1px;">
-          <i class="bi bi-geo-alt-fill me-2" style="color: #d32f2f;"></i>DHL Asset Tracker
-        </h5>
-        <button type="button" class="btn-close" style="filter: invert(1);" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+  <!-- DHL Asset Tracker Modal -->
+  <div class="modal fade" id="dhlTrackerModal" tabindex="-1" aria-labelledby="dhlTrackerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content border-0 shadow-lg rounded-4"
+        style="background: var(--background-color); color: var(--default-color);">
+        <div class="modal-header border-0 py-3 px-4" style="background: var(--background-color);">
+          <h5 class="modal-title fw-bold" id="dhlTrackerModalLabel"
+            style="color: var(--contrast-color); letter-spacing: 1px;">
+            <i class="bi bi-geo-alt-fill me-2" style="color: #d32f2f;"></i>DHL Asset Tracker
+          </h5>
+          <button type="button" class="btn-close" style="filter: invert(1);" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
 
-      <div class="modal-body p-4">
-        <div class="row align-items-center gy-4">
-          <!-- Image and Badge -->
-          <div class="col-12 col-md-5 text-center">
-            <div class="bg-gradient rounded-3 shadow-sm p-3" style="background: linear-gradient(135deg,#23272f 60%,#d32f2f 100%);">
-              <img src="assets/img/dhl.jpg" alt="DHL Tracker" class="img-fluid rounded-3" style="max-height:160px; object-fit:contain;">
-            </div>
-            <div class="mt-3">
-              <span class="badge rounded-pill px-3 py-2" style="background:#d32f2f; color:#fff; font-size:0.95rem;">
-                <i class="bi bi-truck me-1"></i> DHL Sri Lanka
-              </span>
-            </div>
-          </div>
-
-          <!-- Text Content -->
-          <div class="col-12 col-md-7">
-            <!-- Problem -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #d32f2f; color: #fff;">Problem</span>
-              <p class="mb-2 small">
-                DHL faced difficulty in tracking sensitive packages during cross-country deliveries. Lack of visibility into package location and environmental conditions led to delays and damages.
-              </p>
+        <div class="modal-body p-4">
+          <div class="row align-items-center gy-4">
+            <!-- Image and Badge -->
+            <div class="col-12 col-md-5 text-center">
+              <div class="bg-gradient rounded-3 shadow-sm p-3"
+                style="background: linear-gradient(135deg,#23272f 60%,#d32f2f 100%);">
+                <img src="assets/img/dhl.jpg" alt="DHL Tracker" class="img-fluid rounded-3"
+                  style="max-height:160px; object-fit:contain;">
+              </div>
+              <div class="mt-3">
+                <span class="badge rounded-pill px-3 py-2" style="background:#d32f2f; color:#fff; font-size:0.95rem;">
+                  <i class="bi bi-truck me-1"></i> DHL Sri Lanka
+                </span>
+              </div>
             </div>
 
-            <!-- Client Request -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #1976d2; color: #fff;">Client Request</span>
-              <p class="mb-2 small">
-                A compact, portable tracking device that could provide real-time GPS data, temperature logs, and GSM alerts — all battery-operated and reusable across shipments.
-              </p>
-            </div>
+            <!-- Text Content -->
+            <div class="col-12 col-md-7">
+              <!-- Problem -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #d32f2f; color: #fff;">Problem</span>
+                <p class="mb-2 small">
+                  DHL faced difficulty in tracking sensitive packages during cross-country deliveries. Lack of
+                  visibility into package location and environmental conditions led to delays and damages.
+                </p>
+              </div>
 
-            <!-- What We Delivered -->
-            <div class="mb-3">
-              <span class="badge fw-semibold mb-1" style="background: #388e3c; color: #fff;">What We Delivered</span>
-              <ul class="small ps-3 mb-2" style="list-style: disc;">
-                <li>GPS module for live location updates</li>
-                <li>High-accuracy temperature sensor</li>
-                <li>GSM module for cloud syncing</li>
-                <li>Compact, rechargeable battery with 72hr life</li>
-                <li>Integrated with SenseGrid’s tracking dashboard</li>
-              </ul>
-            </div>
+              <!-- Client Request -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #1976d2; color: #fff;">Client Request</span>
+                <p class="mb-2 small">
+                  A compact, portable tracking device that could provide real-time GPS data, temperature logs, and GSM
+                  alerts — all battery-operated and reusable across shipments.
+                </p>
+              </div>
 
-            <!-- Deployment & Impact -->
-            <div>
-              <span class="badge fw-semibold mb-1" style="background: #5d4037; color: #fff;">Deployment & Impact</span>
-              <p class="mb-0 small">
-                Used in high-value logistics nationwide. Helped reduce package location disputes by 90% and ensured temperature compliance in cold chain logistics.
-              </p>
+              <!-- What We Delivered -->
+              <div class="mb-3">
+                <span class="badge fw-semibold mb-1" style="background: #388e3c; color: #fff;">What We Delivered</span>
+                <ul class="small ps-3 mb-2" style="list-style: disc;">
+                  <li>GPS module for live location updates</li>
+                  <li>High-accuracy temperature sensor</li>
+                  <li>GSM module for cloud syncing</li>
+                  <li>Compact, rechargeable battery with 72hr life</li>
+                  <li>Integrated with SenseGrid’s tracking dashboard</li>
+                </ul>
+              </div>
+
+              <!-- Deployment & Impact -->
+              <div>
+                <span class="badge fw-semibold mb-1" style="background: #5d4037; color: #fff;">Deployment &
+                  Impact</span>
+                <p class="mb-0 small">
+                  Used in high-value logistics nationwide. Helped reduce package location disputes by 90% and ensured
+                  temperature compliance in cold chain logistics.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="modal-footer border-0 py-3 px-4 d-flex justify-content-center" style="background: var(--background-color);">
-        <button type="button" class="btn px-4 rounded-pill" style="border:1px solid var(--contrast-color); color: var(--contrast-color); background:transparent;" data-bs-dismiss="modal">
-          <i class="bi bi-x-circle me-1"></i>Close
-        </button>
+        <div class="modal-footer border-0 py-3 px-4 d-flex justify-content-center gap-2"
+          style="background: var(--background-color);">
+          <a href="dhl-tracker.html" class="btn btn-primary px-4 rounded-pill">
+            <i class="bi bi-info-circle me-1"></i>See More Details
+          </a>
+          <button type="button" class="btn px-4 rounded-pill"
+            style="border:1px solid var(--contrast-color); color: var(--contrast-color); background:transparent;"
+            data-bs-dismiss="modal">
+            <i class="bi bi-x-circle me-1"></i>Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 </body>
 
